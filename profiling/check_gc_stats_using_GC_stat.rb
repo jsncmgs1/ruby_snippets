@@ -2,12 +2,12 @@
 
 module DoWork
   def self.work
-    before_count = GC.stat[:count]
+    before = GC.stat
     x = 'x' * 1024 * 1024 * 1000 # Allocate 100 MB of memory
     y = 'x' * 1024 * 1024 * 1000 # Allocate 100 MB of memory
-    after_count = GC.stat[:count]
-    puts "Before count: #{before_count}"
-    puts "After count: #{after_count}"
+    after = GC.stat
+    puts "Before count: #{before}"
+    puts "After count: #{after}"
   end
 end
 

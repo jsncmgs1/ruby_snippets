@@ -1,7 +1,7 @@
 # `ps -o rss= -p #{Process.pid}`.to_i/1024
 #
 # checks the memory use of a process
-# credit to Alexander Dynamo - Ruby Performance Optimization
+# credit to Alexander Dymo - Ruby Performance Optimization
 
 module DoWork
   def self.work
